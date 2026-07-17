@@ -1,0 +1,22 @@
+[package]
+name = "iitr-vpn"
+version = "0.1.0"
+edition = "2024"
+description = "A secure terminal UI for the IIT Roorkee AnyConnect VPN"
+license = "MIT"
+readme = "README.md"
+rust-version = "1.85"
+keywords = ["vpn", "openconnect", "tui", "iitr", "anyconnect"]
+categories = ["command-line-utilities", "network-programming"]
+
+[dependencies]
+crossterm = "0.29"
+ratatui = { version = "0.30", default-features = false, features = ["crossterm"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.9"
+url = "2.5"
+zeroize = "1.8"
+
+[profile.release]
+lto = "thin"
+strip = true
