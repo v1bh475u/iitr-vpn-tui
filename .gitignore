@@ -1,0 +1,9 @@
+/target/
+*.tmp
+
+# Original proprietary installer material used for reverse engineering only.
+# It is deliberately excluded from the open-source project and its history.
+/Install.run
+/Readme
+/VPN.zip
+/anyconnect-linux64-4.7.04056/
